@@ -3,6 +3,8 @@ package com.company;
 
 import java.util.Random;
 import java.util.Scanner;
+import java.lang.System;
+
 
 public class Main {
 
@@ -18,6 +20,11 @@ public class Main {
         maximum = keyboard.nextInt();
 
         Random rand = new Random();
+        int number = rand.nextInt(maximum);
+        int tries = 0;
+        Scanner input = new Scanner(System.in);
+        int guess;
+        boolean win = false;
 
 
 
