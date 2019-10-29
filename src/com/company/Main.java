@@ -39,6 +39,15 @@ public class Main {
                 System.out.println("Number is to low, tray again");
             }
 
+            else if(guess > number){
+                System.out.println("Number is to high, try again");
+            }
 
         }
+
+        System.out.println("You win!");
+        System.out.println("It took you "+ tries + " tries.");
+
+
+    }
 }
