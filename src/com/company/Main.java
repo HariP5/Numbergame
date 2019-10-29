@@ -26,7 +26,19 @@ public class Main {
         int guess;
         boolean win = false;
 
+        while (win == false){
+
+            System.out.println("Guess a number between 1 and "+ maximum +": ");
+            guess = input.nextInt();
+            tries++;
+            if (guess == number){
+                win = true;
+            }
+
+            else if(guess < number){
+                System.out.println("Number is to low, tray again");
+            }
 
 
-    }
+        }
 }
